@@ -1,0 +1,5 @@
+pyaxbps==1.1
+numpy==1.17.4
+scipy==1.6.0
+gsw==3.3.1
+
