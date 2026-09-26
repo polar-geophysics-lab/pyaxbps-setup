@@ -7,7 +7,7 @@ Python version 3.8 and older are not usually available on current systems withou
 
 The approach outlined below is to use Pyenv to install a specific version (3.8) of python. The python `venv` module is used to create an isolated python environment for the individual project.
 
-### 1. Install pyenv Python Build dependencies (if you haven't already)
+## 1. Install pyenv Python Build dependencies (if you haven't already)
 **THIS HAS BEEN DONE ON JKB.**
 
 `curl https://pyenv.run | bash`
@@ -19,7 +19,7 @@ Install dependencies:
 
 `sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev`
 
-### 2. Set up Your User environment (assumes Bash)
+## 2. Set up Your User environment (assumes Bash)
 **EACH USER MUST DO THIS**
 Add to your ~/.bashrc file:
 
@@ -31,7 +31,7 @@ eval "$(pyenv init - bash)"
 
 Log out and back in or `source ~/.bashrc`
 
-### 4. Install/Build desired python version 
+## 3. Install/Build desired python version 
 **THIS HAS BEEN DONE ON JKB.**
 
 Install Python v3.8.20:
@@ -40,7 +40,7 @@ Install Python v3.8.20:
 pyenv install 3.8.20`
 ```
 
-### 5. Set Default Pyenv Python Version
+## 4. Set Default Pyenv Python Version
 
 In the root directory of your project tell `pyenv` that you want to base all work on Python v 3.8.20.
 
@@ -51,7 +51,7 @@ pyenv local 3.8.20
 
 This creates the file `.python-version` in the project directory.
 
-### 6. Create isolated python/pip environment with venv
+### 5. Create isolated python/pip environment with venv
 
 By using the `venv` module you can have separate projects all using the Pyenv python v3.8.20 while keeping the specific python dependencies (typically installed with `pip`) completely isolated. This avoids version and dependency conflicts between seprate projects.
 
@@ -70,7 +70,7 @@ Now you can you the bash `sa` alias to activate the project `venv` environment.
 
 `sa` should then add "(venv)" to your bash prompt.
 
-### 7. Install PyAXBPS & Dependencies into Local Environment
+## 6. Install PyAXBPS & Dependencies into Local Environment
 
 Copy the requirements.txt file from this repo into the root folder of your project. 
 
