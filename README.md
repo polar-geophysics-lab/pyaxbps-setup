@@ -1,5 +1,9 @@
 # Setting up PyAXBPS on JKB.UCSD.EDU (Alma Linux 9)
 
+This is a simple setup guide for using the PyAXBPS Python package. You can find the package pn pypi.org: https://github.com/cdens/PyAXBPS/tree/master
+
+That PyAXBPS repo has some sample code that shows typical usage.
+
 ## Set up Python Environment
 PyAXBPS is fairly old and no longer appears to be maintained. Installing it requires Python 3.8 (3.7 may work also). Having to use Python 3.8 means that you may need to older versions of other pythin packages used in your application. Use the requirements.txt file (see below) to do this.
 
